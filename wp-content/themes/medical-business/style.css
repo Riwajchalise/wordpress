@@ -1,0 +1,169 @@
+/*
+Theme Name: Medical Business
+Template: bizberg
+Text Domain: medical-business
+Author: Bizberg Themes
+Author URI: https://bizbergthemes.com/  
+Theme URI: https://bizbergthemes.com/downloads/medical-business/
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Description: Medical Business is a child theme of Bizberg WordPress Theme. Medical Business is a WordPress health theme for medical institutions, clinics, hospitals, doctors, surgeons, gynecologists, general therapist, and health-oriented organizations. It is a theme that’s designed specifically for the use by medical websites. You’ll find that Medical Business gives you ample freedom to talk about your health organization in a way that leaves no questions in patients’ minds. Medical Business is one of the most accessible themes which can easily accommodate all type of users with no coding skills to advanced developers. Medical Business includes excellent features for medical professionals and practices of all kinds, with one click demo data import, customizer based theme options, page builder-friendly design, page & post layout options. This Free Medical WordPress theme is fully responsive, cross-browser compatible, translation ready & SEO friendly. if you run into any problem while using our theme, you can refer to extensive documentation or contact our friendly support team. It fully supports Elementor, all the sections are made from Elementor.
+Tags: custom-logo,custom-menu,featured-images,threaded-comments,translation-ready,left-sidebar,right-sidebar,grid-layout,theme-options,blog,news,portfolio
+Version: 0.2
+Requires PHP: 5.6
+Tested up to: 6.0
+*/
+
+.navbar-default .navbar-nav > li > a {
+    letter-spacing: 0;
+}
+
+.blog-lists.blog-nosidebar-1 .blog-listing.no-sidebars .blog-post.blog-large .entry-header {
+    margin-top: 0 !important;
+}
+
+.expertise_wrapper{
+    background: #f1f1f16b;
+    margin-bottom: 30px;
+}
+
+.services_wrapper,
+.expertise_wrapper {
+    padding: 80px 0;
+}
+
+.services_wrapper h4,
+.expertise_wrapper h4 {
+    color: #0088cc;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+.services_wrapper h2,
+.expertise_wrapper h2 {
+    color: #000;
+    font-family: inherit;
+}
+
+.services_wrapper .title_wrapper,
+.expertise_wrapper .title_wrapper {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'MontserratRegular';
+    padding-bottom: 50px;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.services_wrapper .item_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+
+.services_wrapper .item_wrapper .item .icon{
+    font-size: 50px;
+    color: #0088cc;
+}
+
+.services_wrapper .item_wrapper .item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 30px;
+    box-shadow: 0px 0px 18px #dfdfdf;
+    transition: background ease-in-out 0.3s;
+}
+
+.services_wrapper .item_wrapper .item p{
+    font-size: 16px;
+}
+
+.services_wrapper .item_wrapper .item a{
+    font-family: 'MontserratRegular';
+}
+
+.services_wrapper .item_wrapper .item:hover {
+    transition: background ease-in-out 0.3s;
+    background: #0088cc;
+    color: #fff;
+}
+
+.services_wrapper .item_wrapper .item:hover .icon,
+.services_wrapper .item_wrapper .item:hover a{
+    transition: background ease-in-out 0.3s;
+    color: #fff;
+}
+
+.expertise_wrapper .item_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 25px;
+    column-gap: 25px;
+}
+
+.expertise_wrapper .item_wrapper .item{
+    display: flex;
+    background: #fff;
+    padding: 30px;
+    transition: background ease-in-out 0.3s;
+    align-items: center;
+}
+
+.expertise_wrapper .item_wrapper .item .number{
+    font-family: 'MontserratRegular';
+    padding-right: 20px;
+    color: #0088cc;
+    font-size: 50px;
+}
+
+.expertise_wrapper .item_wrapper .item .content_wrapper h3{
+    font-family: 'MontserratRegular';
+    color: #000;
+    padding-bottom: 5px;
+}
+
+.expertise_wrapper .item_wrapper .item .content_wrapper p{
+    font-size: 15px;
+}
+
+.expertise_wrapper .item_wrapper .item:hover {
+    background: #0088cc;
+    transition: background ease-in-out 0.3s;
+}
+
+.expertise_wrapper .item_wrapper .item:hover .number,
+.expertise_wrapper .item_wrapper .item:hover h3,
+.expertise_wrapper .item_wrapper .item:hover p {
+    color: #fff;
+}
+
+@media (max-width: 991px){
+
+    .services_wrapper .title_wrapper, 
+    .expertise_wrapper .title_wrapper {
+        width: 90%;
+    }
+
+    .services_wrapper .item_wrapper {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 20px;
+    }
+
+}
+
+@media (max-width: 414px){
+
+    .services_wrapper .item_wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .expertise_wrapper .item_wrapper {
+        grid-template-columns: 1fr;
+        row-gap: 17px;
+    }
+
+}
